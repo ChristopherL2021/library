@@ -30,11 +30,38 @@ body {
 
 .main {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  margin: 20px;
+
+  row-gap: 20px;
 }
 
 .button-container {
   display: grid;
   align-items: center;
   justify-content: center;
+  align-items: start;
+}
+
+.book-container {
+  display: grid;
+
+  align-items: center;
+
+  grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
+  gap: 20px;
+}
+
+.book-card {
+  background-color: lightgrey;
+  height: 200px;
+
+  display: grid;
+  align-content: start;
+  padding-top: 20px;
+  padding-left: 20px;
+
+  row-gap: 10px;
+
+  border-radius: 20px;
 }
