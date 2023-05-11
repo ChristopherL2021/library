@@ -40,6 +40,21 @@ body {
 
   background-color: white;
   z-index: 1000;
+
+  padding: 30px 20px;
+}
+
+#book-form {
+  display: grid;
+  gap: 10px;
+}
+
+.form-group {
+  display: grid;
+}
+
+#read {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .hidden {
