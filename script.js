@@ -13,10 +13,12 @@ function addBookToLibrary() {
 // Create variables for document elements
 const showFormButton = document.getElementById("show-form-button");
 const formContainer = document.getElementById("form-container");
+const backgroundblur = document.getElementById("background-blur");
 
 // Shows the form
 showFormButton.addEventListener("click", () => {
   formContainer.classList.remove("hidden");
+  backgroundblur.classList.remove("hidden");
 });
 
 // Grabs form element
@@ -35,5 +37,6 @@ formContainer.addEventListener("submit", (event) => {
   console.log(book + ", " + author + ", " + pages + ", " + read + ".");
 
   formContainer.classList.add("hidden");
+  backgroundblur.classList.add("hidden");
   bookForm.reset();
 });
