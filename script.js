@@ -2,13 +2,19 @@
 
 let myLibrary = [];
 
-function Book() {
+function Book(book, author, pages, read) {
+  const bookObj = {};
+  bookObj.book = book;
+  bookObj.author = author;
+  bookObj.pages = pages;
+  bookObj.read = read;
 
-}
+  return bookObj;
+};
 
 function addBookToLibrary() {
   
-}
+};
 
 // Create variables for document elements
 const showFormButton = document.getElementById("show-form-button");
@@ -34,7 +40,10 @@ formContainer.addEventListener("submit", (event) => {
   const pages = formData.get("pages");
   const read = formData.get("read");
 
-  console.log(book + ", " + author + ", " + pages + ", " + read + ".");
+  const newBook = new Book(book, author, pages, read);
+  myLibrary.push(newBook);
+
+  console.log(myLibrary);
 
   formContainer.classList.add("hidden");
   backgroundblur.classList.add("hidden");
