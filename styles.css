@@ -25,7 +25,7 @@ body {
   z-index: 999;
 }
 
-.header {
+header {
   display: grid;
   text-align: center;
   align-items: center;
@@ -100,4 +100,12 @@ body {
   row-gap: 10px;
 
   border-radius: 20px;
+}
+
+footer {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  font-size: 1.1em;
 }
