@@ -3,13 +3,10 @@
 let myLibrary = [];
 
 function Book(book, author, pages, read) {
-  const bookObj = {};
-  bookObj.book = book;
-  bookObj.author = author;
-  bookObj.pages = pages;
-  bookObj.read = read;
-
-  return bookObj;
+  this.book = book;
+  this.author = author;
+  this.pages = pages;
+  this.read = read;
 };
 
 function addBookToLibrary() {
