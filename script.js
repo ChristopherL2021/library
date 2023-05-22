@@ -15,9 +15,13 @@ function addBookToLibrary() {
 
   for (let i = 0; i < myLibrary.length; i++) {
     let book = myLibrary[i];
-    
+    let bookId = i;
+
+    book.bookId = bookId;
+
     const bookCard = document.createElement("div");
     bookCard.classList.add("book-card");
+    bookCard.setAttribute("id", bookId);
     bookContainer.append(bookCard);
 
     const bookName = document.createElement("h2");
@@ -42,7 +46,21 @@ function addBookToLibrary() {
     read.classList.add("read");
     read.innerHTML = book.read;
     div.append(read);
+
+    const remove = document.createElement("button");
+    remove.classList.add("remove");
+    remove.innerHTML = "Remove";
+    bookCard.append(remove);
+
+    remove.addEventListener("click", removeBook);
   }
+};
+
+function removeBook() {
+  let book = this.parentNode;
+  let bookId = book.getAttribute("id");
+  book.parentNode.removeChild(book);
+  myLibrary.splice(bookId, 1);
 };
 
 // Create variables for document elements
