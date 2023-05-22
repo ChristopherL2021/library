@@ -100,6 +100,12 @@ header {
   row-gap: 10px;
 
   border-radius: 20px;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.remove {
+  align-self: center;
+  justify-self: center;
 }
 
 footer {
@@ -109,3 +115,4 @@ footer {
   padding-left: 10px;
   font-size: 1.1em;
 }
+
