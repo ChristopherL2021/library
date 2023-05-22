@@ -9,6 +9,7 @@ function Book(book, author, pages, read) {
   this.read = read;
 };
 
+// Adds books to the Dom
 function addBookToLibrary() {
   const bookContainer = document.querySelector(".book-container");
   bookContainer.innerHTML = "";
@@ -88,7 +89,7 @@ formContainer.addEventListener("submit", (event) => {
   const read = formData.get("read");
 
   const newBook = new Book(book, author, pages, read);
-  myLibrary.push(newBook);
+  myLibrary.push(newBook); // Add book to Array
 
   addBookToLibrary();
 
