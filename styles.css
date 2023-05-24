@@ -94,13 +94,18 @@ header {
 
   display: grid;
   align-content: start;
-  padding-top: 20px;
-  padding-left: 20px;
-
-  row-gap: 10px;
+  padding: 10px;
 
   border-radius: 20px;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 1fr 1fr;
+}
+
+.book-card div {
+  display: grid;
+}
+
+.book-name {
+  text-align: center;
 }
 
 .remove {
@@ -116,3 +121,7 @@ footer {
   font-size: 1.1em;
 }
 
+.read-status {
+  align-self: center;
+  justify-self: center;
+}
