@@ -43,10 +43,10 @@ function addBookToLibrary() {
     pages.innerHTML = book.pages;
     div.append(pages);
 
-    const read = document.createElement("p");
-    read.classList.add("read");
+    const read = document.createElement("button");
+    read.classList.add("read-status");
     read.innerHTML = book.read;
-    div.append(read);
+    bookCard.append(read);
 
     const remove = document.createElement("button");
     remove.classList.add("remove");
