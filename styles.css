@@ -78,6 +78,12 @@ header {
   align-items: start;
 }
 
+#show-form-button {
+  min-width: 150px;
+  border-radius: 10px;
+  padding: 1px 0;
+}
+
 .book-container {
   display: grid;
 
@@ -104,6 +110,13 @@ header {
   display: grid;
 }
 
+.read-status,
+.remove {
+  min-width: 150px;
+  border-radius: 10px;
+  padding: 1px 0;
+}
+
 .book-name {
   text-align: center;
 }
@@ -124,4 +137,16 @@ footer {
 .read-status {
   align-self: center;
   justify-self: center;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: grey;
+  font-size: 1.1em;
 }
