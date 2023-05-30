@@ -2,6 +2,17 @@
 
 let myLibrary = [];
 
+// test book
+const testBook = {
+  book: "This is a book",
+  author: "Im the Author",
+  pages: "56",
+  read: "Read"
+};
+myLibrary.push(testBook);
+addBookToLibrary();
+// end test book
+
 function Book(book, author, pages, read) {
   this.book = book;
   this.author = author;
@@ -35,17 +46,26 @@ function addBookToLibrary() {
 
     const author = document.createElement("p");
     author.classList.add("author-name");
-    author.innerHTML = book.author;
+    author.innerHTML = `Author: ${book.author}`;
     div.append(author);
 
     const pages = document.createElement("p");
     pages.classList.add("pages");
-    pages.innerHTML = book.pages;
+    pages.innerHTML = `Pages: ${book.pages}`;
     div.append(pages);
 
     const read = document.createElement("button");
     read.classList.add("read-status");
     read.innerHTML = book.read;
+    read.addEventListener("click", () => {
+      if (read.innerHTML === "Read") {
+        read.innerHTML = "Has not Read";
+        myLibrary[bookId].read = "Has not Read";
+      } else {
+        read.innerHTML = "Read";
+        myLibrary[bookId].read = "Read";
+      };
+    });
     bookCard.append(read);
 
     const remove = document.createElement("button");
