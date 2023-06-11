@@ -59,8 +59,8 @@ function addBookToLibrary() {
     read.innerHTML = book.read;
     read.addEventListener("click", () => {
       if (read.innerHTML === "Read") {
-        read.innerHTML = "Has not Read";
-        myLibrary[bookId].read = "Has not Read";
+        read.innerHTML = "Have not Read";
+        myLibrary[bookId].read = "Have not Read";
       } else {
         read.innerHTML = "Read";
         myLibrary[bookId].read = "Read";
