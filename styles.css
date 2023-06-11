@@ -156,7 +156,7 @@ input:focus {
 
   border-radius: 20px;
   grid-template-rows: 2fr 2fr 1fr 1fr;
-  box-shadow: 0px 2px 5px 1px black;
+  box-shadow: 0px 2px 5px 1px grey;
 }
 
 .book-card div {
