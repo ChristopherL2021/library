@@ -4,8 +4,8 @@ let myLibrary = [];
 
 // test book
 const testBook = {
-  book: "This is a book",
-  author: "Im the Author",
+  book: "I Am a Test Book",
+  author: "Im the Test Book Author",
   pages: "56",
   read: "Read"
 };
