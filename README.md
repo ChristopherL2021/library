@@ -2,14 +2,11 @@
 
 ## **This is an App that stores basic book information.**
 
-<br>
 
 ### **Description**
 
 This App helps you remember books you want to read and books that you have already read!  
 It also allows you to add a books "Author" and the number of pages contained within.  
-
-<br>
 
 ### **How to use the app.**
 
@@ -24,8 +21,6 @@ Once complete you can click submit and your new book is now saved!
 Thats all you need to know.  
 
 **Have Fun!**
-
-<br>
 
 ## **App details** 
 
