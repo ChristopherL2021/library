@@ -6,16 +6,12 @@
 
 ### **Description**
 
----
-
 This App helps you remember books you want to read and books that you have already read!  
 It also allows you to add a books "Author" and the number of pages contained within.  
 
 <br>
 
 ### **How to use the app.**
-
----
 
 When you first start the app you are greeted with a test book already loaded.  
 You can click "Remove" to remove the test book. You can also cycle between "Read" and  
@@ -33,6 +29,5 @@ Thats all you need to know.
 
 ## **App details** 
 
----
-
-This app was built using vanilla JavaScript, CSS and HTML.
+This app was built using vanilla JavaScript, CSS and HTML.  
+You can view the app **[Here.](https://christopherl2021.github.io/library/)** 
